@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Fonte e fundo */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #4facfe, #00f2fe);
+  color: #333;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Container principal */
+.container {
+  background: #fff;
+  padding: 40px;
+  border-radius: 12px;
+  width: 90%;
+  max-width: 600px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+/* Título */
+h1 {
+  margin-bottom: 15px;
+  color: #4facfe;
+}
+
+/* Texto */
+p {
+  margin-bottom: 20px;
+  line-height: 1.6;
+}
+
+/* Botão */
+button {
+  background: #4facfe;
+  color: #fff;
+  border: none;
+  padding: 12px 25px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: 0.3s;
+}
+
+/* Hover do botão */
+button:hover {
+  background: #00c6ff;
+  transform: scale(1.05);
+}
+
+/* Input */
+input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  outline: none;
+  transition: 0.3s;
+}
+
+/* Foco no input */
+input:focus {
+  border-color: #4facfe;
+  box-shadow: 0 0 5px rgba(79, 172, 254, 0.5);
+}
+    </style>
+</head>
+<body>
+    <div class="container">
+  <h1>Minha Página</h1>
+  <p>Um exemplo simples com CSS3 moderno.</p>
+
+  <input type="text" placeholder="Digite algo..." />
+  <button>Clique aqui</button>
+</div>
+
+</body>
+</html>
