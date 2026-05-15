@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    <h1>Teste de Formulário</h1>
+    <form action="cadastro.php" method="get" autocomplete="on">
+        <p>
+            <label for="inome">Nome</label>
+            <input type="text" name="nome" id="inome" required maxlength="30" placeholder="Nome Completo" autocomplete="name">
+        </p>
+        <p>
+            <label for="imedia">Média</label>
+            <input type="number" name="media" id="imedia" min="0" max="10" placeholder="0 a 10" step="0.1" value="5" required>
+        </p>
+
+        <p>
+            <label for="imes">Período Letivo</label>
+            <input type="month" name="mes" id="imes" value="2026-05">
+        </p>
+        <p>
+            <label for="idia">Dia da Prova</label>
+            <input type="date" name="dia" id="idia" value="2026-05-15">
+        </p>
+        <p>
+            <label for="ihora">Horário da Prova</label>
+            <input type="time" name="hora" id="ihora">
+        </p>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>
+
+
+<!--<input type="number" name="media" id="imedia" min="0" max="10" placeholder="0 a 10" step="0.1" required> geralmente é usado quando você quer colocar apenas números (mais usado para médias e documentos com números)
+
+min="" e max="" é usado quando é numérico, caso não seja só numerico, usa-se minLength/maxLength.
+
+step="" é usado para quando eu queira mudar de décimo em décimo caso seja uma nota escolar, etc... Ex: step="0.1" vai fazer com aceite a cada 1 décimo, como 5.1, 5.2, etc.-->
+
+<!-- <input type="month" name="mes" id="imes"> é usado para que adicione o mês/ano ao seu formulário. -->
+
+<!-- <input type="date" name="dia" id="idia"> é usado para que adicione o dia/mes/ano ao seu formulário. -->
+
+<!-- <input type="time" name="hora" id="ihora"> é usado caso você queira adicionar a hora ao seu formulário, ex: Caso eu queira preencher um horário para marcar o médico, posso usar o "time" para enviar o horário no formulário. -->
+
+<!-- value="" é usado caso você queira colocar os valores de data/mes etc... Manual (Geralmente você irá fazer esse value em JavaScript) -->
