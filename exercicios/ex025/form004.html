@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Exemplo de Formulário</h1>
+    <form action="cadastro.php" method="get" autocomplete="on">
+        <fieldset>
+            <legend>Dados Pessoais</legend>
+            <p>
+                <label for="inome">Nome</label>
+                <input type="text" name="nome" id="inome" minlength="5" maxlength="20" required>
+            </p>
+            <p>
+                <label for="iemail">E-mail</label>
+                <input type="email" name="email" id="iemail" required autocomplete="email">
+            </p>
+            <p>
+                <label for="itel">Telefone</label>
+                <input type="tel" name="tel" id="itel" autocomplete="tel" pattern="^\(\d{2})\d{4,5}-\d{4}$" required placeholder="(XX) XXXX-XXXX">
+            </p>
+            <!-- Estudar mais sobre RegEx -->
+            <p>
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Limpar">
+            </p>
+        </fieldset>
+    </form>
+</body>
+</html>
+
+<!-- <fieldset></fieldset> é usado para agrupar campos semelhantes em um formulário.
+ <legend></legend> é usado apra adicionar uma legenda ao formulário. -->
+
+
+<!-- Caso o seu formulário precise de um número de telefone, você pode usar: <input type="tel" name="tel" id="itel" autocomplete="tel" pattern="^\d{4,5}-\d{4}$"> nesse caso o patter="^\d{4,5}-\d{4}$" é relacionado ao número de digitos que você deseja (caso seja telefone ou celular )
+
+ (\d{2}) é relacionado aos 2 digitos do DDD -->
